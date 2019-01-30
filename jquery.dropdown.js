@@ -395,6 +395,10 @@
       var _config = _dropdown.config;
       var $target = $(event.target);
       var id = $target.data('id');
+      
+      var _config = _dropdown.config;
+      _config.del.call(_dropdown, event);
+      
       // 2017-03-23 15:58:50 测试
       // 10000条数据测试删除，耗时 ~3ms
       $.each(_dropdown.name, function (key, value) {
